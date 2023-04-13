@@ -7,10 +7,7 @@ export default function LandingFragment() {
   return (
     <div className="flex flex-col h-screen">
       <div className="flex flex-col flex-1 justify-center items-center">
-        <Heading
-          headingSize="xxlarge"
-          className="animate-[fadeIn_1s_ease] mb-10"
-        >
+        <Heading size="xxlarge" className="animate-[fadeIn_1s_ease] mb-10">
           Hi I&apos;m Nathan
         </Heading>
         <Avatar
@@ -20,7 +17,7 @@ export default function LandingFragment() {
           size={156}
         />
         <Heading
-          headingSize="large"
+          size="large"
           className="opacity-0 animate-[fadeIn_1s_ease_1s_forwards] mb-10"
         >
           Mobile Software Engineer

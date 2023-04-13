@@ -3,15 +3,11 @@ import React from 'react'
 type HeadingSize = 'medium' | 'large' | 'xlarge' | 'xxlarge'
 
 interface HeadingProps extends React.HTMLAttributes<HTMLTitleElement> {
-  headingSize: HeadingSize
+  size: HeadingSize
 }
 
-export default function Heading({
-  headingSize,
-  children,
-  className,
-}: HeadingProps) {
-  switch (headingSize) {
+export default function Heading({ size, children, className }: HeadingProps) {
+  switch (size) {
     case 'medium':
       return (
         <h4 className={`text-white text-sm sm:text-lg font-bold ${className}`}>
