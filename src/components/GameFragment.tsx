@@ -1,6 +1,4 @@
-import Stack from '@/components/Stack'
 import Heading from '@/components/typography/Heading'
-import { UserPlusIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import React from 'react'
 
@@ -8,7 +6,7 @@ export default function GameFragment() {
   const imageStyleClasses = 'mb-6'
   const paragraphStyleClasses = 'text-white text-base px-4'
   return (
-    <div className='flex flex-col items-center bg-neutral-900'>
+    <div className="flex flex-col items-center bg-neutral-900">
       <Heading size="xlarge" className="text-center">
         It all started with a video game.
       </Heading>
@@ -33,7 +31,7 @@ export default function GameFragment() {
         width={500}
         height={1000}
         className={imageStyleClasses}
-      ></Image>      
+      ></Image>
     </div>
   )
 }
