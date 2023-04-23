@@ -3,10 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 
 export default function GameFragment() {
-  const imageStyleClasses = 'mb-6'
-  const paragraphStyleClasses = 'text-white text-base px-4'
+  const paragraphStyleClasses =
+    'text-white text-base px-4 mb-4 md:mt8 mt-8 md:mt-12'
   return (
-    <div className="flex flex-col items-center bg-neutral-900">
+    <div className="flex flex-col items-center bg-neutral-900 pt-8 md:pt12">
       <Heading size="xlarge" className="text-center">
         It all started with a video game.
       </Heading>
@@ -19,7 +19,6 @@ export default function GameFragment() {
         alt="minecraft logo"
         width={500}
         height={1000}
-        className={imageStyleClasses}
       ></Image>
       <p className={paragraphStyleClasses}>
         At the <b>age of 14</b> I wrote
@@ -30,7 +29,6 @@ export default function GameFragment() {
         alt="young nathan playing minecraft"
         width={500}
         height={1000}
-        className={imageStyleClasses}
       ></Image>
     </div>
   )
